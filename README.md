@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Portfolio 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project made with CRA, below is pregenerated README info.
 
 ## Available Scripts
 
