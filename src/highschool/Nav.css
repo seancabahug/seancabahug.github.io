@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+.header {
+    width: 100vw;
+    padding: 30px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav > a {
+    text-decoration: none;
+    color: rgb(45, 45, 45);
+    opacity: 0.5;
+    transition: opacity ease-in-out 0.25s;
+    padding: 12px;
+}
+
+.nav > a:hover {
+    opacity: 0.9;
+}
