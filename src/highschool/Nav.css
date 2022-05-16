@@ -1,7 +1,10 @@
 .nav {
     display: flex;
-    width: 500px;
+    width: 700px;
     justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto';
+    font-weight: 300;
 }
 
 .header {
@@ -12,14 +15,31 @@
     align-items: center;
 }
 
-.nav > a {
+a {
     text-decoration: none;
-    color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
     opacity: 0.5;
     transition: opacity ease-in-out 0.25s;
     padding: 12px;
+    letter-spacing: 3px;
+    font-size: 20px;
 }
 
-.nav > a:hover {
+a:hover {
     opacity: 0.9;
+}
+
+.active-nav {
+    opacity: 1;
+}
+
+.name {
+    position: absolute;
+    left: 15px;
+}
+
+.name > a {
+    font-family: 'IBM Plex Mono', 'Consolas', Courier, monospace;
+    font-weight: 100;
+    font-size: 30px;
 }

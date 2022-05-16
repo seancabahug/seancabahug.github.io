@@ -10,9 +10,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import "../Home.css";
 import "./HighSchool.css";
 import Nav from './Nav';
+import Resumes from './Resumes';
+import Freshman from './Freshman';
+import Sophomore from './Sophomore';
+import Junior from './Junior';
+import Senior from './Senior';
 
 function Page(props) {
-    return <motion.div 
+    return <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -30,11 +35,11 @@ export function HighSchool() {
         <AnimatePresence exitBeforeEnter initial={false}>
             <Routes location={location} key={location.pathname}>
                 <Route index element={<Navigate replace to="resumes" />} />
-                <Route key="resumes" path="resumes" element={<Page page={<h1>bruh</h1>} />} />
-                <Route key="freshman" path="freshman" element={<Page page={<h2>yeahhh</h2>}/>} />
-                <Route key="sophomore" path="sophomore" element={<h1>s</h1>} />
-                <Route key="junior" path="junior" element={<h1>asdf</h1>} />
-                <Route key="senior" path="senior" element={<h1>ajflajf</h1>} />
+                <Route key="resumes" path="resumes" element={<Page page={<Resumes />} />} />
+                <Route key="freshman" path="freshman" element={<Page page={<Freshman />}/>} />
+                <Route key="sophomore" path="sophomore" element={<Page page={<Sophomore />} />} />
+                <Route key="junior" path="junior" element={<Page page={<Junior />} />} />
+                <Route key="senior" path="senior" element={<Page page={<Senior />} />} />
             </Routes>
         </AnimatePresence>
     </>;
