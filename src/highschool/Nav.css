@@ -34,12 +34,16 @@ a:hover {
 }
 
 .name {
+    font-family: 'IBM Plex Mono', 'Consolas', Courier, monospace;
+    font-weight: 100;
+    font-size: 30px;
     position: absolute;
     left: 15px;
 }
 
-.name > a {
-    font-family: 'IBM Plex Mono', 'Consolas', Courier, monospace;
+.reflection {
+    position: absolute;
+    right: 15px;
     font-weight: 100;
-    font-size: 30px;
+    font: 'Roboto', sans-serif;
 }

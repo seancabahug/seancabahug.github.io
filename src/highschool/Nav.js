@@ -3,9 +3,7 @@ import './Nav.css';
 
 export default function Nav() {
     return <div className="header">
-        <div className="name">
-            <Link to="/">Sean Cabahug</Link>
-        </div>
+        <Link to="/" className="name">Sean Cabahug</Link>
         <div className="nav">
             {["resumes", "freshman", "sophomore", "junior", "senior"].map(page =>
                 <NavLink key={page} to={page} className={({ isActive }) => isActive ? "active-nav" : undefined}>
@@ -13,5 +11,8 @@ export default function Nav() {
                 </NavLink>
             )}
         </div>
+        <a className="reflection" href="https://docs.google.com/document/d/16NQ29swJTTI4QWje8tmHJgzqebNP4OALQjRIxZTs0I4/edit?usp=sharing">
+            Reflection
+        </a>
     </div>
 }
