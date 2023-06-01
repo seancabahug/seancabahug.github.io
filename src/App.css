@@ -1,0 +1,5 @@
+.html_wrapper {
+  position: fixed !important;
+  image-rendering: crisp-edges;
+  overflow: hidden;
+}
